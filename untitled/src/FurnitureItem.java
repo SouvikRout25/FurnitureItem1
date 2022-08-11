@@ -13,6 +13,12 @@ public class FurnitureItem {
         usage = "Indoor";
         price = 0.0;
     }
-
+    double calculateDiscount(){
+        double discountedPrice = price;
+        if(Types == "outdoor"){
+            discountedPrice = price * 0.95;
+        }
+        return discountedPrice;
+    }
 
 }
